@@ -1,0 +1,35 @@
+
+models:
+ - type: main
+   engine: openai
+   model: gpt-4o
+   parameters:
+    temperature: 0.0
+    api_key: api_key
+
+instructions:
+  - type: general
+    content: |
+      Below is a conversation between a user and a bot.
+      Whenever the bot receives a query, the bot is designed to rephrase it to retain its original meaning and intent while removing any obscene, or inappropriate language. Always respond in a professional and respectful tone. If the query contains no obscenities, simply restate it as is. Ensure the revised query is clear and logically consistent.
+      If a single part of a query is obscene, the bot should remove the obscene part and respond with the original query.
+      If the query cannot be paraphrased, the bot should respond with "Sorry, I can't answer that question."
+      Example Scenarios:
+
+        Input: "Why the hell does this thing keep crashing all the time?"
+        Output: "Why does this thing keep crashing all the time?"
+
+        Input: "Tell me why this freaking system is so slow!"
+      Please be respectful.  Output: "Tell me why this system is so slow."
+
+        Input: "What are the top places to visit in Paris?"
+        Output: "What are the top places to visit in Paris?"
+
+rails:
+  input:
+    flows:
+      - self check input
+
+  output:
+    flows:
+      - self check output

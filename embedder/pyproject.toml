@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "embedder"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.1.2"
+fastapi = {extras = ["standard"], version = "^0.115.4"}
+openai = "^1.52.2"
+modal = "^0.65.41"
+
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,55 @@
+# extra files
+requirements.txt
+Cache2/
+parser-cache/
+form-10k-parser-cache/
+tmp/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# Cache
+Cache.zip
+Cache/
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+.env
+Cache.zip
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git
+.gitignore
+
+# Logs
+*.log
+
+# Local development
+.DS_Store 
