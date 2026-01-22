@@ -2,7 +2,7 @@
 
 ![ReefChat Demo](<./gifs/01%20Reef%20(Transparent%20Background).gif>)
 
-This repository contains a Multi-Agent Dynamic RAG system implemented in 5 folders as shown below
+This repository contains a Multi-Agent Dynamic RAG system implemented in 5 folders as shown below for the Inter IIT Tech Meet 13.0
 
 ```
 REEFChat/
